@@ -87,8 +87,11 @@ nav .menu-btn {
     font-size: 2em;
     font-weight: 800;
 }
-.foot {
+footer {
+    
     position: sticky;
+}
+.foot {
     background-color: #1b1b1b;
     color: white;
     text-align: center;
