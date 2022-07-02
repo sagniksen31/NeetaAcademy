@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px  50px  0px  50px;
+    background: #1b1b1b;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tm {
+    font-size: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FAC213;
+}
+
+.active {
+    background-color: #FAC213;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+nav .menu-btn {
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 120px 100px 120px;
+    background-color: black;
+    color: #fff;
+}
+
+.intro .about-content {
+    max-width: 300px;
+    color: white;
+}
+
+.intro img {
+    max-width: 400px;
+}
+.big{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.foot {
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    display: inline-block;
+    min-width: 100%;
+}
+
+.foot img {
+    max-width: 35px;
+    padding: 0 3px 5px 3px;
+}
+.more {
+    display: inline-block;
+    background: #FAC213 ;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+@media (max-width:835px) {
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left:-100%;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+    nav .menu-btn {
+        display: block;
+    }
+    
+    #click:checked~ul {
+        left: 0%;
+    }
+    .intro {
+        flex-direction: column-reverse;
+    }
+
+    .intro img{
+        padding: 0 0 30px 0;
+    }
+
+    .banner .content a {
+        margin-bottom: 50px;
+    }
+    .abt-me {
+        padding-bottom: 30px;
+    }
+}
