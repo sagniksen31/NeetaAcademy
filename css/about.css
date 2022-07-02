@@ -87,10 +87,6 @@ nav .menu-btn {
     font-size: 2em;
     font-weight: 800;
 }
-footer {
-    
-    position: sticky;
-}
 .foot {
     background-color: #1b1b1b;
     color: white;
@@ -99,6 +95,7 @@ footer {
     padding-bottom: 50px;
     display: inline-block;
     min-width: 100%;
+    min-height: 40vh;
 }
 
 .foot img {
